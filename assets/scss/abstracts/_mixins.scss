@@ -1,0 +1,47 @@
+// DEFAULT MEDIA QUERIES
+
+@mixin for-tablet-landscape {
+  @media (max-width: 1200.98px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portrait {
+  @media (max-width: 991.98px) {
+    @content;
+  }
+}
+
+@mixin for-mobile {
+  @media (max-width: 767.98px) {
+    @content;
+  }
+}
+
+@mixin for-thumbnail {
+  @media (max-width: 479.98px) {
+    @content;
+  }
+}
+
+// MIXIN FOR RESPONSIVE FONTS.
+// usage: @include responsive-font(16, 12)
+
+$max_width: 1900;
+
+@mixin responsive-font($pc_value, $mob_value) {
+  $add_value: $pc_value - $mob_value;
+  $add_mob_value: $add_value + $add_value * 0.7;
+
+  @media (max-width: 767px) {
+    font-size: calc(
+      #{$mob_value + px} + #{$add_mob_value} * ((100vw - 320px) / #{$max_width})
+    );
+  }
+
+  @media (min-width: 767px) {
+    font-size: calc(
+      #{$mob_value + px} + #{$add_value} * (100vw / #{$max_width})
+    );
+  }
+}

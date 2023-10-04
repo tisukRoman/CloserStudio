@@ -1,0 +1,19 @@
+html {
+  font-size: 1em;
+  scroll-behavior: smooth;
+}
+
+[class*="__container"] {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: rem(1170 + 30);
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
