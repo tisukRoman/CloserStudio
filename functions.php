@@ -1,4 +1,4 @@
 <?php
 
-require_once('lib/assets.php');
-require_once('lib/config.php');
+require_once('inc/assets.php');
+require_once('inc/config.php');

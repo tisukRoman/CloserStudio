@@ -27,9 +27,9 @@
 // MIXIN FOR RESPONSIVE FONTS.
 // usage: @include responsive-font(16, 12)
 
-$max_width: 1900;
+$max_width: 1920;
 
-@mixin responsive-font($pc_value, $mob_value) {
+@mixin rfs($pc_value, $mob_value) { // responsive-font-size
   $add_value: $pc_value - $mob_value;
   $add_mob_value: $add_value + $add_value * 0.7;
 

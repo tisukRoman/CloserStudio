@@ -6,8 +6,8 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.0.0",
-    "@babel/register": "^7.0.0",
     "@babel/preset-env": "^7.12.1",
+    "@babel/register": "^7.22.15",
     "beepbeep": "^1.2.2",
     "browser-sync": "^2.11.1",
     "eslint": "^7.12.0",
@@ -46,6 +46,7 @@
     "cache-clear": "gulp clearCache"
   },
   "dependencies": {
-    "gulp-cli": "^2.3.0"
+    "gulp-cli": "^2.3.0",
+    "object.map": "^1.0.1"
   }
 }
