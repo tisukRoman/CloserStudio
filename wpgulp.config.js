@@ -12,7 +12,7 @@ const injectChanges = true;
 
 // >>>>> Style options.
 // Path to main .scss file.
-const styleSRC = "./assets/scss/main.scss";
+const styleSRC = "./assets/sass/main.sass";
 
 // Path to place the compiled CSS file. Default set to root folder.
 const styleDestination = "./assets/css/";
@@ -56,7 +56,7 @@ const imgDST = "./assets/img/";
 
 // >>>>> Watch files paths.
 // Path to all *.scss files inside css folder and inside them.
-const watchStyles = "./assets/scss/**/*.scss";
+const watchStyles = "./assets/sass/**/*.sass";
 
 // Path to all vendor JS files.
 const watchJsVendor = "./assets/js/vendor/*.js";
@@ -89,8 +89,8 @@ const zipIgnoreGlob = [
   "!./vscode",
   "!./package.json",
   "!./package-lock.json",
-  "!./assets/scss/**/*",
-  "!./assets/scss",
+  "!./assets/sass/**/*",
+  "!./assets/sass",
   "!./assets/img/raw/**/*",
   "!./assets/img/raw",
   `!${imgSRC}`,

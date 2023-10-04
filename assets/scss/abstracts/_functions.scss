@@ -1,5 +1,0 @@
-// CONVERTS PX TO REM
-@function rem($value) {
-  $remValue: ($value / 1rem) + rem;
-  @return $remValue;
-}
